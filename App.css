@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+}
+
+.board {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #4a1c1c;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.column:hover {
+    border-color: #3498db;
+}
+
+.card {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 2px solid #080808;
+    border-radius: 10px;
+    background-color: #defef7f0;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    color: #2c3e50;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.4;
+}
+
+.card a {
+    color: #0e0f10;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.column:not(:last-child) {
+    margin-right: 10px;
+}
+
+.ticket {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 65%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.ticket:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.priority-icon {
+    margin-right: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.statusicon {
+    width: 4%;
+    transition: transform 0.3s ease;
+}
+
+.statusicon:hover {
+    transform: scale(1.2);
+}
